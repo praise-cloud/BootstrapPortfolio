@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"/>
+  <style>
+    [class*="col"]{
+        padding: 1rem;
+        background-color: #33b5e5;
+        border: 2px solid #fff;
+        color: #fff;
+    }
+    [class*="container"]{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+    <h1>Making use of CDN</h1>
+
+    <div class="container-fluid border">Content will full the screen</div>
+    <div class="container-md border">Conten if it passes the med level it will shink</div>
+
+    <!-- grid -- rows -->
+    <div class="container-md border">
+        <div class="row">
+            <div class="col-2">col 1</div>
+            <div class="col-4">col 2</div>
+            <div class="col-4">col 3</div>
+            <div class="col-2">col 4</div>
+            <div class="col">col 5 auto</div>
+        </div>
+    </div>
+
+    <div class="container">Space</div>
+
+    <!-- grid with break points -->
+    <div class="container-md border">
+        <div class="row">
+            <div class="col-md-2">col md 1</div>
+            <div class="col-md-4">col md 2</div>
+            <div class="col-md-4">col md 3</div>
+            <div class="col-md-2">col md 4</div>
+            <div class="col">col md 5 auto</div>
+        </div>
+    </div>
+
+    <div class="container">Space</div>
+
+    <!-- grid with break points -->
+    <div class="container border">
+        <div class="row">
+            <div class="col-lg-8 col-md-6">col lg 1</div>
+            <div class="col-lg-4 col-md-6">col lg 2</div>
+            <div class="col-lg-4 col-md-3">col lg 3</div>
+            <div class="col-lg-8 col-md-8">col lg 4</div>
+            <div class="col">col lg 5 auto</div>
+        </div>
+    </div>
+
+    <div class="container">start align</div>
+
+    <!-- grid with break points(alignment- vertical)-->
+    <div class="container border">
+        <div class="row align-items-start" style="height:500px;">
+            <div class="col">col align 1</div>
+            <div class="col">col align 2</div>
+            <div class="col">col align 3</div>
+            <div class="col">col align 4</div>
+            <div class="col">col align 5</div>
+        </div>
+    </div>
+
+    <div class="container">center align</div>
+
+    <div class="container border">
+        <div class="row align-items-center" style="height:500px;">
+            <div class="col">col align 1</div>
+            <div class="col">col align 2</div>
+            <div class="col">col align 3</div>
+            <div class="col">col align 4</div>
+            <div class="col">col align 5</div>
+        </div>
+    </div>
+
+    <div class="container">end align</div>
+
+    <div class="container border">
+        <div class="row align-items-end" style="height:500px;">
+            <div class="col">col align 1</div>
+            <div class="col">col align 2</div>
+            <div class="col">col align 3</div>
+            <div class="col">col align 4</div>
+            <div class="col">col align 5</div>
+        </div>
+    </div>
+
+
+    <div class="container">start align horizontal</div>
+
+    <!-- grid with break points(alignment- vertical)-->
+    <div class="container border">
+        <div class="row justify-content-center">
+            <div class="col-4">col align 1</div>
+            <div class="col-4">col align 2</div>
+            <div class="col-4">col align 3</div>
+            <div class="col-4">col align 4</div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
